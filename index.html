@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christy Demian CV</title>
+<style>
+  /* Layout: a single-column paper CV that mirrors the PDF. Black on white, Arial, one deliberate look in both themes. */
+  :root {
+    --bg: #ffffff;
+    --fg: #000000;
+    --font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color-scheme: light;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 15px;
+    line-height: 1.45;
+    padding-block: 40px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  .sheet { max-width: 780px; margin: 0 auto; }
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 2.9rem);
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+  .contact { margin: 0; }
+  .contact a { color: var(--fg); }
+  .rule { border: 0; border-top: 1px solid var(--fg); margin: 16px 0 6px; }
+
+  section { margin-top: 20px; }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+  }
+  p { margin: 0; }
+  .justify { text-align: justify; }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0 20px;
+    flex-wrap: wrap;
+  }
+  .row .date { white-space: nowrap; }
+  .gap { margin-top: 14px; }
+
+  ul { margin: 3px 0 0; padding-left: 22px; }
+  li + li { margin-top: 2px; }
+  li { text-align: justify; }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.4fr;
+    gap: 8px 24px;
+  }
+  .skills > div { min-width: 0; }
+  .skills h3 { font-size: 1rem; font-weight: 700; margin: 0 0 3px; }
+  .skills h3 span { font-weight: 400; }
+  .two-col { columns: 2; column-gap: 20px; }
+  .two-col li { break-inside: avoid; text-align: left; }
+  .skills li { text-align: left; }
+
+  @media (max-width: 640px) {
+    body { padding-block: 20px; }
+    .skills { grid-template-columns: minmax(0, 1fr); }
+    .two-col { columns: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <h1>Christy Demian</h1>
+  <p class="contact">Ghazir, Lebanon | +961 76 837 699 |<br>christydemian@outlook.com | <a href="https://linkedin.com/in/christydemian" target="_blank" rel="noopener">linkedin.com/in/christydemian</a></p>
+  <hr class="rule">
+
+  <section>
+    <h2>Profile</h2>
+    <p class="justify">Marketing graduate (BBA) pursuing a Master's in Business Analytics at AUB, combining marketing expertise with data analytics to build data-driven strategies that help companies grow. I am a highly adaptable team player and confident communicator with strong presentation skills, who understands the importance of clear communication in every project. Alongside my graduate studies, I am looking to build on my existing knowledge through new professional opportunities.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+
+    <div class="row">
+      <div><strong>American University of Beirut (AUB)</strong> | <em>Beirut , Lebanon</em></div>
+      <span class="date">Sep. 2026 - Present</span>
+    </div>
+    <p>Masters in Business Analytics</p>
+    <p><em>Relevant Coursework:</em></p>
+
+    <p class="gap"><strong>Data Visualization &amp; Communication</strong> | MSBA 325</p>
+    <ul>
+      <li>Designing interactive Tableau dashboards and applying visual design and storytelling principles to turn complex data into clear, decision-ready insights for non-technical audiences.</li>
+    </ul>
+
+    <p class="gap"><strong>Business Understanding for Business Analytics</strong> | MSBA 300</p>
+    <ul>
+      <li>Analyzed company cases across marketing and operations, framing business problems analytically, and recommending data-driven initiatives aligned with business strategy.</li>
+    </ul>
+
+    <div class="row gap">
+      <div><strong>Notre Dame University Louaize (NDU)</strong> | <em>Zouk Mosbeh , Lebanon</em></div>
+      <span class="date">Sep. 2023 - May 2026</span>
+    </div>
+    <p>Bachelor of Business Administration in Marketing</p>
+    <p>GPA: 3.87 /4.0 | Dean's Honor List</p>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="row">
+      <strong>Strawberry Agency</strong>
+      <span class="date">Jan. 2026 - Feb. 2026</span>
+    </div>
+    <p>Marketing Intern | <em>Jounieh, Lebanon</em></p>
+    <ul>
+      <li>Designed tailored content strategies aligned with clients' identities and growth stage to effectively target key customer segments and maximize engagement.</li>
+      <li>Analyzed and proposed enhancements for company channels to ensure consistent brand messaging and boost visibility.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Academic Projects</h2>
+    <p><strong>Integrated Communications Strategy</strong></p>
+    <p>Promotional Strategy Course Project | MRK 321 | NDU</p>
+    <ul>
+      <li>Developed promotional tools and advertising concepts</li>
+      <li>Applied sales promotions, Alternative Marketing and Social Media Promotions</li>
+      <li>Managed Multi-Channel Campaign Execution</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Languages <span>(Fluent)</span></h3>
+        <ul>
+          <li>English</li>
+          <li>French</li>
+          <li>Arabic</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Technical Skills</h3>
+        <ul class="two-col">
+          <li>Microsoft Office 365</li>
+          <li>R Programming</li>
+          <li>Python (plotly)</li>
+          <li>Tableau</li>
+          <li>Excel</li>
+          <li>PowerPoint</li>
+          <li>Canva</li>
+          <li>Zoom &amp; WebEx</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Presentation &amp; Communication</li>
+          <li>Adaptability</li>
+          <li>Decision-making &amp; Analytical Thinking</li>
+          <li>Creativity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
